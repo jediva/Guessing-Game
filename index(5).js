@@ -3,7 +3,10 @@
 function range () {
   //generating a random number between 1 and 2
   const random = Math.floor(Math.random() * 2) + 1;
-
+  
+  // prompt user for name
+  let userName = (prompt('Enter a name you want to be called'));
+  
   //prompting user for input
   let number =(prompt('Guess a number from 1 to 2: '));
 
@@ -16,5 +19,3 @@ function range () {
   if(number == random) {console.log('You have received a point')};  
 }
 range();
-
-console.log(range);
